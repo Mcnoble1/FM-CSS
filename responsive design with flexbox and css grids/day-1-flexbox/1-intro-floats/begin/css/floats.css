@@ -31,20 +31,43 @@ div img {
 }
 
 /* grid system -- mobile first! */
-.row-1 {
-	
+.row  {
+	clear: both;
 }
 
-.row-2 {
-
+.cell {
+	width: 20%;
+	float: left;
+	margin-left: 4%; 
+	background-color: blanchedalmond;
 }
 
-.row-3 {
-
+.cell-2 {
+	width: 40%;
+	float: left;
+	margin-left: 4%;
+	background-color: rgb(170, 198, 223);	
 }
 
-.row-4 {
+.cell-3-1 {
+	width: 20%;
+	float: left;
+	margin-left: 4%;
+	background-color: aqua;
+}
 
+.cell-3-2 {
+	width: 60%;
+	float: left;
+	margin-left: 4%;
+	background-color: aqua;
+}
+
+.cell-4 {
+	width: 92%;
+	float: left;
+	margin-left: 4%;
+	background-color: brown;
 }
 
 /* Mobile Landscape Screen Sizes */
