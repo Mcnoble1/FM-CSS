@@ -34,12 +34,12 @@ div img {
 .row {
 	display: flex;
 	flex-flow: row wrap;
-	/* margin-bottom: 1%; */
 }
 
 [class*="col-"] {
 	margin-left: 1%;
 	margin-bottom: 1%;
+	flex: 0 0 92	1%;
 }
 
 .col-1, .col-3-1 {
@@ -62,25 +62,33 @@ div img {
 	background-color:violet;
 }
 
+.col-5-1, .col-5-3 {
+	flex: 0 0 98%;
+	background-color: turquoise;
+}
+
+.col-5-2 {
+	flex: 0 0 98%;
+	background-color:thistle;
+}
+
+
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
-	.col-1 {
+	.col-1, .col-2, .col-5-1, .col-5-3 {
 		flex: 0 0 48%;
 	}
 
-	.col-2 {
-		flex: 0 0 48%;
-	}
-
-	.col-3-1, .col-3-2 {
+	.col-3-1, .col-3-2, .col-4 {
 		flex: 0 0 98%;
 	}
 
-	.col-4 {
+	.col-5-2 {
 		flex: 0 0 98%;
+		order: -1;
 	}
-
 }
+
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
 	.col-1, .col-3-1 {
@@ -97,5 +105,20 @@ div img {
 
 	.col-4 {
 		flex: 0 0 99%;
+	}
+	
+	.col-5-1 {
+		flex: 0 0 24%;
+		order: 1;
+	}
+
+	.col-5-2 {
+		flex: 0 0 49%;
+		order: 2;
+	}
+
+	.col-5-3 {
+		flex: 0 0 24%;
+		order: 3;
 	}
 }
