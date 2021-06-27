@@ -191,7 +191,7 @@ aside[class*='sidebar'] {
   .wrapper {
       width: 97%;
       max-width: 1200px;
-      float: none;
+      /* float: none; */
   }
 
   [class*='col-'] {
@@ -227,7 +227,7 @@ aside[class*='sidebar'] {
   nav li:nth-child(even),
   nav li:nth-child(odd) {
     display: inline-block;
-    float: none;
+    /* float: none; */
     width: auto;
     padding: 0;
   }
