@@ -128,9 +128,12 @@ footer a {
 }
 /* grid system */
 .row {
-  display: flex;
-  flex-flow: row wrap;
-  flex: 0 1 auto;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto;
+ grid-template-areas: 
+ "main"
+ "sidebar";
 }
 [class*="col-"] {
   flex: 0 0 92%;
@@ -177,20 +180,6 @@ div.row {
     margin-left: 4%;
     margin-right: 0%;
   }
-  .col-1-2,
-  .col-2,
-  [class*="sidebar"] {
-    flex: 0 0 44%; 
-  }
-  .col-1-4,
-  .col-3,
-  .col-4 {
-    flex: 0 0 92%;
-  }
-  .reverse [class*='col-'] {
-    margin-left: 0%;
-    margin-right: 4%;
-  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) { 
@@ -220,33 +209,5 @@ div.row {
   nav a {
       padding: 0em 1em;
   }
-  .col-1-2,
-  .col-1-4 {
-    flex: 0 0 20%;
-  }
-  .col-2,
-  .col-2-4 {
-    flex: 0 0 44%;
-  }
-  .col-3 {
-    flex: 0 0 68%;
-  }
-  .col-4 {
-    flex: 0 0 92%;
-  }
-  [class*="sidebar"] {
-    flex: 0 0 100%;
-  }
-  .order-first {
-    order: 1;
-  } 
-  .order-second {
-    order: 2;
-  }
-  .order-third {
-    order: 3;
-  }
-  .order-fourth {
-    order: 4;
-  }
+
 }
